@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://qweaxe.github.io/BlogTest/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/BlogTest/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/BlogTest/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/BlogTest/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/BlogTest/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/BlogTest/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/BlogTest/">Home</a>
+        
+          <a class="main-nav-link" href="/BlogTest/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/BlogTest/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://qweaxe.github.io/BlogTest"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Github-Hexo-的个人博客部署" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/BlogTest/2023/03/17/Github-Hexo-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/" class="article-date">
+  <time class="dt-published" datetime="2023-03-17T15:24:49.000Z" itemprop="datePublished">2023-03-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/BlogTest/2023/03/17/Github-Hexo-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/">Github + Hexo 的个人博客部署</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="一、所需环境"><a href="#一、所需环境" class="headerlink" title="一、所需环境"></a>一、所需环境</h1><p><strong>这是基于Github和Hexo框架所构成的个人博客</strong>，测试下字体大小<br>1.远程类：git<br>2.脚本类：Node.js<br>3.环境框架：Hexo<br>4.文本编辑器：可以编辑md文件的，待补充，暂时使用的是VScode<br>5.其他：</p>
+<h1 id="二、git、nodejs等环境的安装"><a href="#二、git、nodejs等环境的安装" class="headerlink" title="二、git、nodejs等环境的安装"></a>二、git、nodejs等环境的安装</h1><p>1.安装：<br>git网址：<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a><br>nodejs网址<a target="_blank" rel="noopener" href="https://nodejs.org/en">https://nodejs.org/en</a><br>2.Git的配置：<br>3.安装Hexo框架：<br>（1）初始化：命令行安装（<strong>不是Git！！！</strong>）npm(Node.js 包管理工具)<br>（2）命令行安装Hexo：基于上一步的npm，命令：npm install -g hexo -cli<br>（3）本地硬盘新建文件夹，作为存放代码的地方：<br>（4）在（3）中创建的文件夹右键鼠标，点击 Git Bash；执行如下命令：hexo init ；hexo g； hexo s；</p>
+<h1 id="三、本地项目的构建"><a href="#三、本地项目的构建" class="headerlink" title="三、本地项目的构建"></a>三、本地项目的构建</h1><h1 id="四、推送到Github"><a href="#四、推送到Github" class="headerlink" title="四、推送到Github"></a>四、推送到Github</h1><p>1.建立项目：<br><strong>先要在Github上建立项目！</strong>建立了项目之后再生成ssh密钥并登录<br>2.补充：<br>在此目录下安装hexo-deployer-git插件：npm install hexo-deployer-git –save；编辑目录下的_config.yml文件，修改配置文件（此处有问题，自己）<br>3.建立分支：<br>利用分支作为修改文件，master作为访问文件，方便多处终端修改<br>注意：克隆远程仓库到本地时不要账户名，直接使用：git clone <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;</a>:qweaxe&#x2F;BlogTest.git 即可<br>4.推送：<br>hexo clean：清除本地项目<br>hexo g：重新生成<br>hexo s：开启本地预览<br>hexo d：推送到Github</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44732432/article/details/124714408">https://blog.csdn.net/qq_44732432/article/details/124714408</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/36564cf5191a">https://www.jianshu.com/p/36564cf5191a</a><br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a><br><a target="_blank" rel="noopener" href="https://www.dhndzwxj.top/584278389.html">https://www.dhndzwxj.top/584278389.html</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click">https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0b1fccce74e0">https://www.jianshu.com/p/0b1fccce74e0</a></p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://qweaxe.github.io/BlogTest/2023/03/17/Github-Hexo-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/" data-id="clfcpoa170000bwv0ggnkc78j" data-title="Github + Hexo 的个人博客部署" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-yourdick" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/BlogTest/2023/03/17/yourdick/" class="article-date">
+  <time class="dt-published" datetime="2023-03-17T15:04:14.000Z" itemprop="datePublished">2023-03-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/BlogTest/2023/03/17/yourdick/">yourdick</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://qweaxe.github.io/BlogTest/2023/03/17/yourdick/" data-id="clfcpoa1l0002bwv0dxyn5onw" data-title="yourdick" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/BlogTest/2023/03/17/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2023-03-17T12:27:02.114Z" itemprop="datePublished">2023-03-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/BlogTest/2023/03/17/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://qweaxe.github.io/BlogTest/2023/03/17/hello-world/" data-id="clfcpoa1h0001bwv0eq1aelxv" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/BlogTest/archives/2023/03/">March 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/BlogTest/2023/03/17/Github-Hexo-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/">Github + Hexo 的个人博客部署</a>
+          </li>
+        
+          <li>
+            <a href="/BlogTest/2023/03/17/yourdick/">yourdick</a>
+          </li>
+        
+          <li>
+            <a href="/BlogTest/2023/03/17/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/BlogTest/" class="mobile-nav-link">Home</a>
+  
+    <a href="/BlogTest/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/BlogTest/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/BlogTest/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/BlogTest/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
