@@ -82,7 +82,7 @@ nodejs网址https://nodejs.org/en
 1.同步和更新的区别：
 ---
 
-同步指的是不同终端的原始文件的同步，使用的命令为：`git add .`, `git commit -m '(更新备注)'`，`git push`；每次要更新内容时，都要从仓库拉取源代码：`git pull`；保证文件是最新内容，养成良好的习惯。
+同步指的是不同终端的原始文件的同步，使用的命令依次为：`git add .`, `git commit -m '(更新备注)'`，`git push`；每次要更新内容时，都要从仓库拉取源代码：`git pull`；保证文件是最新内容，养成良好的习惯。
 而更新指的是网页内容本身的更新，使用的是：`hexo clean`&`hexo g`，`hexo d`；若要预览则在生成后输入`hexo s`；
 
 Reference
