@@ -23,6 +23,7 @@ nodejs网址https://nodejs.org/en
 （1）配置用户名：git config --global user.name "此处写用户名"
 （2）配置邮箱：git config --global user.name"此处写邮箱"
 （3）查找.gitconfig文件：位置一般在C:/Users/[username]/.gitconfig
+（4）ssh密钥登陆：此方式保密性高，更实用
 
 3.安装Hexo框架：
 （1）初始化：命令行安装（**不是Git！！！**）npm(Node.js 包管理工具)
@@ -43,7 +44,7 @@ nodejs网址https://nodejs.org/en
 在此目录下安装hexo-deployer-git插件：`npm install hexo-deployer-git --save`；编辑目录下的_config.yml文件，修改配置文件（此处有问题，自己）
 3.建立分支：
 利用分支作为修改文件，master作为访问文件，方便多处终端修改
-注意：克隆远程仓库到本地时不要账户名，直接使用：`git clone git@github.com:qweaxe/BlogTest.git`即可
+注意：克隆远程仓库到本地时不要账户名，直接使用：`git clone git@github.com:xxxxxx/xxxxxx.git`即可
 4.推送：
 `hexo clean`：清除本地项目
 `hexo g`：重新生成
