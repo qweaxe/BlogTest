@@ -20,6 +20,10 @@ tags:
 git网址：https://git-scm.com/download/win
 nodejs网址https://nodejs.org/en
 2.Git的配置：
+（1）配置用户名：git config --global user.name "此处写用户名"
+（2）配置邮箱：git config --global user.name"此处写邮箱"
+（3）查找.gitconfig文件：位置一般在C:/Users/[username]/.gitconfig
+
 3.安装Hexo框架：
 （1）初始化：命令行安装（**不是Git！！！**）npm(Node.js 包管理工具)
 （2）命令行安装Hexo：基于上一步的npm，命令：npm install -g hexo -cli
@@ -53,6 +57,13 @@ hexo d：推送到Github
 使用分支更新的方式会导致不能直接在分支目录中从仓库 git clone想要的主题，只能先从其他地方clone过来，主要原因是直接clone会生成.git目录，一个git仓库中不能包含另一个git仓库
 2.图片上传问题：
 若使用markdown格式，就只能本地图片位置目录或者网页链接，不能直接放在md文件里；
+需要修改_config.yml，将post_asset_folder: false改为ture，此方式不好用！
+插件方法：hexo-renderer-marked，用命令npm install hexo renderer-marked安装，再在_config.yml更改配置：
+>post_asset_folder: true
+>marked:
+>  prependRoot: true
+>  postAsset: true
+更方便的方法：配合markdown编辑器
 3.更新问题：
 更新速度偏慢；自动更新检测：；
 
