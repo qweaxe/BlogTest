@@ -8,7 +8,10 @@ subtitle: ''
 description: ''
 keywords:
 author: Hath Hasee
-language: en
+language: 
+  - zh-cn
+  - zh-tw
+  - en
 timezone: ''
 
 # URL
