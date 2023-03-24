@@ -632,7 +632,7 @@ hr_icon:
   icon: # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
-# the subtitle on homepage (主頁subtitle)
+# the subtitle on homepage (主页subtitle)
 subtitle:
   enable: false
   # Typewriter Effect (打字效果)
