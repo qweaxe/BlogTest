@@ -2,7 +2,7 @@
 title: Github + Hexo 的个人博客部署
 date: 2023-03-17 23:24:49
 tags:
-  -blog
+  blog
 ---
 一、所需环境
 ====
