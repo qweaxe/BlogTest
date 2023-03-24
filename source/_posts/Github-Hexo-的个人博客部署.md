@@ -73,7 +73,6 @@ deploy:
   type: 'git'
   repo:https://github.com/用户名/项目名.git 或者 git@github.com:用户名/项目名.git//(http或者ssh都可以)
   branch: main  //也可以单独设置个分支专用于更新
-
 ```
 
 4.推送：
