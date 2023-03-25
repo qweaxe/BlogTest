@@ -121,8 +121,29 @@ deploy:
 想用：https://github.com/lxgw/LxgwWenKai-Screen 作为网页的显示字体
 方法：https://github.com/chawyehsu/lxgw-wenkai-webfont
 
+六、博客本身的结构设计（待补充）
+=====
 
-六、注意事项
+1.主题页面
+---
+
+2.标签页
+---
+
+3.分类页
+---
+
+4.图库
+---
+
+5.子页面
+---
+
+6.404页面
+---
+
+
+七、注意事项
 ======
 
 1.同步和更新的区别：
@@ -145,7 +166,7 @@ Please commit your changes or stash them before you merge.
 所以要要养成好习惯，每次修改完成后及时推送，不然会出现此问题；
 
 
-七、后续更新
+八、后续更新
 =======
 
 1.如何写一篇博客
