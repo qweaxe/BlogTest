@@ -105,7 +105,7 @@ disable_top_img: false
 index_img: 
 
 # If the banner of page not setting, it will show the top_img 默认的顶部图像，其他有设置就是最低优先级
-default_top_img: /img/test.png
+default_top_img: /img/238.jpg
 #https://img9.uhdpixel.com/wp/a/48/landscape-minimalist-ocean-mountain-b414.jpg
 
 
@@ -155,7 +155,7 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
@@ -680,7 +680,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/qweaxe
   card_announcement:
     enable: true
     content: This is my Blog
