@@ -1370,3 +1370,10 @@ pre .javascript .function {
   margin-right: 5px;
   display: inline-block;
 }
+
+/*
+@import 'kxgw-wenkai-screen-webfont/style.css';
+body{
+  font font-family: "LXGW WenKai Screen",sans-serif;
+}
+*/

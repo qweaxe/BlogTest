@@ -98,16 +98,24 @@ deploy:
 
 使用分支更新的方式会导致不能直接在分支目录中从仓库 `git clone`想要的主题，只能先从其他地方clone过来，主要原因是直接clone会生成.git目录，一个git仓库中不能包含另一个git仓库
 
+设置主题的方法（以butterfly为例）：
+Hexo根目录安装：`git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly`，安装完成后记得把.git文件夹删掉
+修改_config.yml文件：`theme: butterfly`
+安装插件（pug和stylus的渲染器）：`npm install hexo-renderer-pug hexo-renderer-stylus --save`
+升级主题：在hexo根目录创建`config.butterfly.yml`,其中内容由**主题**目录中的`_config.yml`复制过来，不要删掉源文件，以后只需在`config.butterfly.yml`进行配置，hexo会自动合并，优先外面的`config.butterfly.yml`配置信息
+
 2.图片上传问题：
 ---
 
 若使用markdown格式，就只能本地图片位置目录或者网页链接，不能直接放在md文件里；
 需要修改_config.yml，将`post_asset_folder: false`改为`ture`，此方式不好用！
-插件方法：hexo-renderer-marked，用命令`npm install hexo renderer-marked`安装，再在_config.yml更改配置：
-`post_asset_folder: true`
-`marked:`
-  `prependRoot: true`
-  `postAsset: true`
+插件方法：hexo-renderer-marked，用命令`npm install hexo-renderer-marked`安装，再在_config.yml更改配置：
+```
+  post_asset_folder: true
+   marked:
+      prependRoot: true
+      postAsset: true
+```
 更方便的方法：配合markdown编辑器
 
 3.更新问题：
@@ -120,6 +128,20 @@ deploy:
 
 想用：https://github.com/lxgw/LxgwWenKai-Screen 作为网页的显示字体
 方法：https://github.com/chawyehsu/lxgw-wenkai-webfont
+（1）利用本地文件修改：https://moonshuo.cn/posts/1481.html#%E4%B8%8B%E8%BD%BD （方法待整理）；试了很多次，都失败，怀疑是否是字体问题，更换了也失败；文件放入了没有作用；
+（2）利用CDN修改：（过程待补充）
+```
+  font-family: "LXGW WenKai Screen"~~, sans-serif;~~
+  ……
+  head:
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
+  
+```
+预览是成功的，但是部署上去就失败了；后面将CDN源换成了国内的：
+`- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.6.0/style.min.css" />`
+就成功了；看看能不能两个链接复用，应对内外访问的情况/自己建立CDN库
+（3）npm部署方式：还未成功，主要是找不到使用的主题的`style.css`；突然想到和(1)一样的方法，在建立的新文件中插入链接？不过不在一个大文件夹中，有时间移到同一个文件夹试试
+（4）tips查看网页中的字体：F12 → 选择元素 → computed → 最底部的文字；除了字体，还可以看字体来源是本地文件还是网页来判断使用情况
 
 六、博客本身的结构设计（待补充）
 =====
