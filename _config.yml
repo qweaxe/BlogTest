@@ -10,8 +10,8 @@ keywords:
 author: Hath Hasee
 language: 
   - zh-cn
-  - zh-tw
-  - en
+  #- zh-tw
+  #- en
 timezone: ''
 
 # URL
@@ -108,3 +108,15 @@ deploy:
   type: 'git'
   repo: git@github.com:qweaxe/BlogTest.git
   branch: main
+plugins:
+  hexo-generator-feed
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date

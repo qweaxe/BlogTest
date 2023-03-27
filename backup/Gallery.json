@@ -1,0 +1,51 @@
+[
+    {
+    "name": "Oh My Girl",
+    "cover": "https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg",
+    "date": "2023-03",
+    "description": "Oh My Girl图片展示",
+    "url_name": "Oh My Girl",
+    "album": [
+        {
+            "img_url": "https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        },
+        {
+            "img_url": "https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        },
+        {
+            "img_url": "https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        },
+        {
+            "img_url": "https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        },
+        {
+            "img_url": "https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        },
+        {
+            "img_url": "https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        },
+        {
+            "img_url": "https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        },
+        {
+            "img_url": "https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg",
+            "title": "Oh My Girl",
+            "describe": "Oh My Girl"
+        }
+      ]
+    }
+  ]
