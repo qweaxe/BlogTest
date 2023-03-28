@@ -6,7 +6,7 @@
   <link href="https://qweaxe.github.io/BlogTest/atom.xml" rel="self"/>
   
   <link href="https://qweaxe.github.io/BlogTest/"/>
-  <updated>2023-03-27T14:22:57.412Z</updated>
+  <updated>2023-03-28T04:50:24.587Z</updated>
   <id>https://qweaxe.github.io/BlogTest/</id>
   
   <author>
@@ -21,12 +21,14 @@
     <link href="https://qweaxe.github.io/BlogTest/2023/03/25/%E5%A6%82%E4%BD%95%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>https://qweaxe.github.io/BlogTest/2023/03/25/%E5%A6%82%E4%BD%95%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
     <published>2023-03-25T00:46:56.000Z</published>
-    <updated>2023-03-27T14:22:57.412Z</updated>
+    <updated>2023-03-28T04:50:24.587Z</updated>
     
     
     <summary type="html">怎么写blog本身的内容</summary>
     
     
+    
+    <category term="blog" scheme="https://qweaxe.github.io/BlogTest/categories/blog/"/>
     
     
     <category term="blog" scheme="https://qweaxe.github.io/BlogTest/tags/blog/"/>
@@ -38,12 +40,14 @@
     <link href="https://qweaxe.github.io/BlogTest/2023/03/24/%E4%B8%BB%E9%A2%98%E7%9A%84%E9%AD%94%E6%94%B9%E4%B9%8B%E8%B7%AF/"/>
     <id>https://qweaxe.github.io/BlogTest/2023/03/24/%E4%B8%BB%E9%A2%98%E7%9A%84%E9%AD%94%E6%94%B9%E4%B9%8B%E8%B7%AF/</id>
     <published>2023-03-24T14:06:46.000Z</published>
-    <updated>2023-03-28T04:42:48.389Z</updated>
+    <updated>2023-03-28T04:48:41.910Z</updated>
     
     
     <summary type="html">基于Hexo的butterfly主题，开启自己的魔改之路</summary>
     
     
+    
+    <category term="blog" scheme="https://qweaxe.github.io/BlogTest/categories/blog/"/>
     
     
     <category term="blog" scheme="https://qweaxe.github.io/BlogTest/tags/blog/"/>
@@ -76,18 +80,14 @@
     <link href="https://qweaxe.github.io/BlogTest/2023/03/17/Github-Hexo-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/"/>
     <id>https://qweaxe.github.io/BlogTest/2023/03/17/Github-Hexo-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/</id>
     <published>2023-03-17T15:24:49.000Z</published>
-    <updated>2023-03-25T16:57:26.746Z</updated>
+    <updated>2023-03-28T04:52:58.147Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;一、所需环境&quot;&gt;&lt;a href=&quot;#一、所需环境&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">最基础的部署博客的内容</summary>
     
     
+    
+    <category term="blog" scheme="https://qweaxe.github.io/BlogTest/categories/blog/"/>
     
     
     <category term="blog" scheme="https://qweaxe.github.io/BlogTest/tags/blog/"/>
