@@ -56,7 +56,7 @@ social:
   fab fa-github: https://github.com/qweaxe
     # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
   fab fa-at: LRcourior@outlook.com
-  fab fa-square-rss: /atom.xml
+  fas fa-rss: /atom.xml
 
 
 # search (搜索)
