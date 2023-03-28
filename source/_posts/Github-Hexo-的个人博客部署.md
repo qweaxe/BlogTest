@@ -3,6 +3,8 @@ title: Github + Hexo 的个人博客部署
 date: 2023-03-17 23:24:49
 tags:
   blog
+categories: blog
+description: 最基础的部署博客的内容
 ---
 一、所需环境
 ====
@@ -29,8 +31,8 @@ nodejs网址：https://nodejs.org/en
 2.Git的配置：
 ---
 
-（1）配置用户名：git config --global user.name "此处写用户名"
-（2）配置邮箱：git config --global user.name"此处写邮箱"
+（1）配置用户名：`git config --global user.name "此处写用户名"`
+（2）配置邮箱：  `git config --global user.name"此处写邮箱"`
 （3）查找.gitconfig文件：位置一般在C:/Users/[username]/.gitconfig；编辑器打开看\[user\]栏是否出现设置的用户名和邮箱账号(补图)
 （4）建立项目：（创建GitHub账户略）新建一个名为：用户名.github.io的仓库(**必须是此格式！！**)（补个图）；邮箱需要验证才能正常使用github功能
 （5）ssh密钥登陆：此方式相比用户名和密码登陆保密性高，更实用；①创建：`ssh-keygen-t rsa -C "xxxx@xxx.com"`；②（补图）可以考虑额外的措施，一般直接回车3次确认；③生成的文件为 id_rsa id_rsa.pub 存放在 C:\Users\admin.ssh 文件夹下；④添加 ssh key：打开上述文件或者在git中输入：`cat ~/.ssh/id_rsa.pub`查询key，然后进入：settings\deploy keys\add deploy key(补图) Title：最好填写和终端有关的信息，方便区分；Key：复制上述查询内容
