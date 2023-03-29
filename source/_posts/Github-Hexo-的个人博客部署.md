@@ -118,7 +118,8 @@ Hexo根目录安装：`git clone -b master https://github.com/jerryc127/hexo-the
       prependRoot: true
       postAsset: true
 ```
-更方便的方法：配合markdown编辑器
+~~更方便的方法：配合markdown编辑器~~
+单个图片的上传方法见：如何写一篇博客(补链接)
 
 3.更新问题：
 ---
@@ -206,6 +207,7 @@ markdown 图片格式
 `lazyload`：(可选)点击按钮加载更多图片，true/false，默认false
 `rowHeight`：（可选）图片显示的高度，若要一行显示更多，可设置更小的数字，默认220
 `limit`：（可选）每次加载图片数量，默认10
+P.S：这两行参数貌似有问题，不符合markdown语法，编译器会报错
 e.g.:
 ```
 {% gallery %}//此行不必输入
@@ -220,6 +222,7 @@ e.g.:
 {% endgallery %}//此行不必输入
 ```
 另一种方法：[应该是原始的方法](https://blog.csdn.net/weixin_42529972/article/details/109485019'不知好不好使')；
+
 
 5.子页面
 ---
