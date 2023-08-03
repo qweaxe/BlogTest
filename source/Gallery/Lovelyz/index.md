@@ -2,10 +2,9 @@
 title: Lovelyz
 date: 2023-03-29 20:57:08
 type: 'Gallery'
-layout: 'Gallery'
-password: 
+layout: 'Gallery' 
 ---
-
+{{ gallery }}
 ![](https://s2.loli.net/2023/03/29/nmpPhzcGkfgYHl8.jpg)
 ![](https://s2.loli.net/2023/03/29/Srfhd4NpolITZm9.jpg)
 ![](https://s2.loli.net/2023/03/29/THIue1qdL738Ocs.jpg)
@@ -15,3 +14,5 @@ password:
 ![](https://s2.loli.net/2023/03/29/tsWpJoEv9c6KhGC.jpg)
 ![](https://s2.loli.net/2023/03/29/h38aAjTUizCO94v.jpg)
 ![](https://s2.loli.net/2023/03/29/jeP4FvNIKtrfxSL.jpg)
+{{ endgallery }}
+

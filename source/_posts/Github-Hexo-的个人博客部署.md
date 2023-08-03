@@ -9,7 +9,6 @@ description: 最基础的部署博客的内容
 一、所需环境
 ====
 
-
 **这是基于Github和Hexo框架所构成的个人博客，考虑是否会出Gitee版，应该会出在自己服务器上架设的版本**，会把每个点的原因尽力讲清楚而不是单纯的操作指南（不然和只会执行指令的机器有什么区别呢？）
 1.远程类：git（代码管理工具，可以用其推送至远程仓库等）
 2.脚本类：Node.js（脚本语言）
@@ -70,7 +69,7 @@ nodejs网址：https://nodejs.org/en
 3.配置：
 ---
 
-修改目录下的_cofig.yml文件，在文件末尾修改配置文件：
+修改目录下的_config.yml文件，在文件末尾修改配置文件：
 ```
 deploy:
   type: 'git'
@@ -221,7 +220,43 @@ e.g.:
 ![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
 {% endgallery %}//此行不必输入
 ```
-另一种方法：[应该是原始的方法](https://blog.csdn.net/weixin_42529972/article/details/109485019'不知好不好使')；
+
+**是因为缺少插件！**
+安装：`npm install hexo-butterfly-tag-plugins-plus --save`
+建议更换渲染插件：
+```
+npm uninstall hexo-renderer-marked --save
+npm install hexo-renderer-kramed --save
+```
+主题文件配置：
+```
+# tag-plugins-plus
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.png #link_card标签默认的图标图片
+  CDN:
+    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+```
+上述更改了之后还是报同样的错误……
+测试Tag Plugins语法：{% u 测试下划线是否有效 %}；成功
+根据[此链接](https://stackoverflow.com/questions/50464528/template-render-error-unknown-path-in-node-js)改为了：
+```
+{{ gallery}}
+图片的link
+{{endgallery}}
+```
+系统确实不报错了，但还是没有实现出相同的效果……
+另一种方法：[应该是原始的方法](https://blog.csdn.net/weixin_42529972/article/details/109485019)；
+
 
 
 5.子页面
@@ -327,3 +362,4 @@ https://hexo.io/zh-cn/docs/github-pages
 https://www.dhndzwxj.top/584278389.html
 https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click
 https://www.jianshu.com/p/0b1fccce74e0
+https://xqher.gitee.io/post/cb592df2bea8/

@@ -118,10 +118,11 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page 主页中的顶部图像
-index_img: 
+index_img: /img/238.jpg
 
 # If the banner of page not setting, it will show the top_img 默认的顶部图像，其他有设置就是最低优先级
-default_top_img: /img/238.jpg
+default_top_img: https://s2.loli.net/2023/04/01/YXQWNq4FL2BUKPl.jpg
+#/img/238.jpg
 #https://img9.uhdpixel.com/wp/a/48/landscape-minimalist-ocean-mountain-b414.jpg
 
 
@@ -703,7 +704,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: 这是一个立志于全栈（做梦ing）的小菜鸡，主力是C++、折腾、开摆
+    description: 这是一个立志于全栈（做梦ing）的小菜鸡，主力是C++（目前要用Java）、嵌入式、服务器、折腾、开摆
     button:
       enable: true
       icon: fab fa-github
@@ -823,7 +824,21 @@ medium_zoom: false
 # http://fancyapps.com/fancybox/3/
 fancybox: true
 
-# Tag Plugins settings (標籤外掛)
+# Tag Plugins settings (标签外挂)
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.png #link_card标签默认的图标图片
+  CDN:
+    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
 # --------------------------------------
 # mermaid
 # see https://github.com/mermaid-js/mermaid
@@ -842,8 +857,8 @@ note:
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   #icons和light_bg_offset支队方法1生效
-  style: flat
-  icons: true
+  style: simple
+  icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
