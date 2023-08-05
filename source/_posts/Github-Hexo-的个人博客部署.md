@@ -12,8 +12,8 @@ description: 最基础的部署博客的内容
 **这是基于Github和Hexo框架所构成的个人博客，考虑是否会出Gitee版，应该会出在自己服务器上架设的版本**，会把每个点的原因尽力讲清楚而不是单纯的操作指南（不然和只会执行指令的机器有什么区别呢？）
 1.远程类：git（代码管理工具，可以用其推送至远程仓库等）
 2.脚本类：Node.js（脚本语言）
-3.环境框架：Hexo（博客框架，使用Markdown格式书写）
-4.文本编辑器：可以编辑md文件的，待补充，暂时使用的是VScode
+3.环境框架：Hexo（博客框架，使用Markdown格式书写）、Butterfly（基于Hexo的主题）
+4.文本编辑器：可以编辑md文件的工具，暂时使用的是VScode，可以用这个在线编辑器[点击这里](https://stackedit.cn/app#)或者[Typora](https://www.typoraio.cn/)（需要破解或者购买正版）
 5.其他：
 
 
@@ -41,13 +41,16 @@ nodejs网址：https://nodejs.org/en
 （2）命令行安装Hexo：基于上一步的npm，命令：`npm install -g hexo -cli`；安装完成后输入`hexo -v`，出现版本行则安装成功
 （3）本地硬盘新建文件夹（**记住这个位置**），作为存放代码的地方；
 （4）在（3）中创建的文件夹右键鼠标，点击 Git Bash；执行如下命令：
-`hexo init` ：初始化命令，自动下载文件到此目录；
-`hexo g`：生成命令，完成框架； 
-`hexo s`：启动本地预览服务，打开链接 http://localhost:4000  可看到初始化是否成功；若加载不出来，考虑一下是否是4000端口被占用了，若是则关闭一下
+`hexo init` ：初始化命令，自动下载文件到此目录；bash如下即为成功：（图片待补充）
+
 
 三、本地项目的构建
 =====
 
+基于第3步的内容后，执行以下质量
+`hexo g`：生成命令，完成框架； 
+`hexo s`：启动本地预览服务，打开链接 http://localhost:4000  可看到初始化是否成功；若加载不出来，考虑一下是否是4000端口被占用了，若是则关闭一下
+以后更新章等操作，在生成前最好执行：`hexo clean`，清除原来的缓存
 
 四、推送到Github
 ======
@@ -141,7 +144,7 @@ Hexo根目录安装：`git clone -b master https://github.com/jerryc127/hexo-the
 ```
 预览是成功的，但是部署上去就失败了；后面将CDN源换成了国内的：
 `- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.6.0/style.min.css" />`
-就成功了；看看能不能两个链接复用，应对内外访问的情况/自己建立CDN库
+就成功了；下一步看看能不能两个链接复用，应对内外访问的情况/自己建立CDN库
 （3）npm部署方式：还未成功，主要是找不到使用的主题的`style.css`；突然想到和(1)一样的方法，在建立的新文件中插入链接？不过不在一个大文件夹中，有时间移到同一个文件夹试试
 （4）tips查看网页中的字体：F12 → 选择元素 → computed → 最底部的文字；除了字体，还可以看字体来源是本地文件还是网页来判断使用情况
 
@@ -184,7 +187,6 @@ Hexo根目录安装：`git clone -b master https://github.com/jerryc127/hexo-the
 ---
 
 Gallary相册：
----
 
 **网上全是抄来抄去的，根本看不懂要放在哪里，没有说清楚操作方法……**
 没看懂要在哪输入，网页本身？：
@@ -255,16 +257,31 @@ tag_plugins:
 {{endgallery}}
 ```
 系统确实不报错了，但还是没有实现出相同的效果……
-另一种方法：[应该是原始的方法](https://blog.csdn.net/weixin_42529972/article/details/109485019)；
+另一种方法：[应该是原始的方法](https://blog.csdn.net/weixin_42529972/article/details/109485019)；此方法待验证
 
 
 
 5.子页面
 ---
 
+子页面也是普通的页面，只需要使用命令`hexo n page xxxxx`创建一个页面；
+再使用标签外挂gallery（这里的说法有问题，详情等待验证）
+
 6.404页面
 ---
 
+主题有内置的404页面，设置中可以开启
+PS：本地预览时，访问出错的网站不会跳转到404页面，本地预览使用此命令：`http://localhost:4000/404.html`
+设置中开启(**主题配置文件**)：
+```
+# A simple 404 page
+error_404:
+  enable: true
+  subtitle: "页面没有找到"
+  background: 
+```
+图片预览效果：
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-error404.png)
 7.数据统计
 ---
 
