@@ -677,6 +677,7 @@ subtitle:
   sub:
       - 今日事&#44;今日毕
       - 想得再多不如马上行动&#44; 不完美的成果比完美的想法更完美
+      - 当我们还买不起幸福的时候，绝不该离得橱窗太近，盯着幸福出神
       - To your valor&#44; my sword&#44; and and our sworn duties together
 
 # Loading Animation (加载动画)
@@ -775,9 +776,9 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: false
+  enable: true
   # The text of a button
-  default: 繁
+  default: 简
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
